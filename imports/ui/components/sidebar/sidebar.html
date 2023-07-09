@@ -1,0 +1,78 @@
+<template name="sidebar">
+    <nav class="navbars bg-light ">
+        <div class="logo-img mx-2 d-flex gap-2 align-items-center">
+            <img src="/images/kaspi.png" style="width: 80px;" />
+            <h4>Kaspi Education Center</h4>
+        </div>
+        <div class="icons mx-3 d-flex gap-2 ">
+            <div class="btn-group dropstart">
+                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa-regular fa-message"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <h6 class="text-center">Messages</h6>
+                </ul>
+            </div>
+            <div class="btn-group dropstart">
+                <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    User
+                </button>
+                <ul class="dropdown-menu">
+                    <a href="/user-informations" class="dropdown-item">Personal</a>
+                    <button class="dropdown-item">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="side-nav bg-light">
+        <div class="side-buttons d-flex gap-2 mt-2">
+            <a href="/" class="button">
+                Lessons <i class="fa-solid fa-person-chalkboard"></i>
+            </a>
+            <a href="/lessons-attendance" class="button">Lessons attendance <i
+                    class="fa-solid fa-clipboard-user"></i></a>
+            <a href="/exams" class="button">
+                Exams <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+            <a href="/exam-results" class="button">
+                Exam results <i class="fa-solid fa-check"></i>/<i class="fa-solid fa-xmark"></i>
+            </a>
+            <a href="/lessons-materials" class="button">Study materials<i class="fa-solid fa-book"></i></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Navbar -->
+    <nav class="mobile-navbar">
+        <a class="navbar-brands">
+            <div class="logo-text"><img src="/images/kaspi.png" style="width: 80px;" alt=""></div>
+        </a>
+        <div class="hamburger-button">
+            <span class="bar bg-primary"></span>
+            <span class="bar bg-primary"></span>
+            <span class="bar bg-primary"></span>
+        </div>
+    </nav>
+
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu">
+        <div class="menu-buttons">
+            <a href="/" class="button">
+                Lessons <i class="fa-solid fa-person-chalkboard"></i>
+            </a>
+            <a href="/lessons-attendance" class="button">Lessons attendance <i
+                    class="fa-solid fa-clipboard-user"></i></a>
+            <a href="/exams" class="button">
+                Exams <i class="fa-solid fa-pen-to-square"></i>
+            </a>
+            <a href="/exam-results" class="button">
+                Exam results <i class="fa-solid fa-check"></i>/<i class="fa-solid fa-xmark"></i>
+            </a>
+            <a href="/lessons-materials" class="button">Study materials <i class="fa-solid fa-book"></i></a>
+            <a href="/user-informations" class="button">Personal</a>
+            <button class="button btn btn-outline-dark">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></button>
+        </div>
+    </div>
+</template>
